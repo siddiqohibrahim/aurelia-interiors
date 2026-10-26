@@ -1,0 +1,646 @@
+
+/*
+
+---------------------- TYPOGRAPHY ----------------------
+
+FONT WEIGHTS
+  400 / 700
+
+LINE HEIGHT
+1.2 /  1.5
+
+LETTER SPACING
+-1.2px
+
+FONT FAMILY
+poppins, sans-serif
+Rubik, sans-serif
+
+FONT SIZES
+1.2rem / 1.6rem / 2rem / 2.4rem / 3.2rem / 4rem / 4.8rem / 6.2rem
+
+
+
+---------------------- COLORS ----------------------
+
+
+PRIMARY - Dark Chocolate Brown
+Base: #1C1C1C [Deep Chocolate]
+Tint: #4A4A47 [Soft Charcoal]
+Shade: #111111 [Near Black]
+
+
+SECONDARY - Warm Ivory
+Base: #F7F3ED [Warm Ivory]
+Tint: #FBF9F6 [Light Ivory]
+Shade: #DED8CF [Deep Ivory]
+
+TERTIARY - Muted Bronze
+Base: #A8875A [Muted Bronze]
+Tint: #C6B08B [Light Bronze]
+Shade: #80643D [Deep Bronze]
+
+GREY - Warm Gray
+Base: #6B6657 [Warm Gray]
+Tint: #A7A39D [Light Gray]
+Shade: #403D39 [Dark Grey]
+
+WHITE: #ffffff 
+BLACK: #000000
+
+---------------------- BORDER ----------------------
+
+BORDER
+
+1px / 2px
+
+BORDER RADIUS
+
+4px / 8px / 12px
+
+---------------------- SPACING ----------------------
+
+4px / 8px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
+
+*/
+
+/*---------------------- GLOBAL STYLYLES ----------------------*/
+
+:root {
+
+  /* FONT WEIGHTS */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* LINE HEIGHT */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* LETTER SPACING */
+  --letter-spacing-tight: -1.5;
+  --letter-spacing-normal: -1.2
+    /* FONT FAMILY */
+    --font-family-heading: 'poppins', sans-serif;
+  --font-family-paragraph: 'Rubik', sans-serif;
+
+
+  /* FONT SIZES */
+  --text-sml: 1.2rem;
+  --text-base: 1.6rem;
+  --text-paragraph: 2rem;
+  --text-h5: 2.4rem;
+  --text-h4: 3.2rem;
+  --text-h3: 4rem;
+  --text-h2: 4.8rem;
+  --text-h1: 6.2rem;
+
+
+  /* COLORS */
+  --primary-base: #5B3A2E;
+  --primary-tint: #8A685A;
+  --primary-shade: #24110b;
+  --secondary-base: #F7F3ED;
+  --secondary-tint: #FBF9F6;
+  --secondary-shade: #DED8CF;
+  --tertiary-base: #b37d31ce;
+  --tertiary-tint: #A8875A;
+  --tertiary-shade: #80643D;
+  --grey-base: #52514f;
+  --grey-tint: #979490;
+  --grey-shade: #1d1c1b;
+  --white: #ffffff;
+  --black: #000;
+
+  /* NAVER */
+  --nave-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body {
+  background-color: var(--secondary-base);
+}
+
+footer {
+  background-color: var(--primary-base);
+  color: var(--secondary-base);
+  padding: 3rem 0 0 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  font-family: var(--font-family-heading);
+  color: var(--grey-shade);
+}
+
+p,
+ul {
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  font-family: var(--font-family-paragraph);
+  color: var(--grey-base);
+}
+
+h1 {
+  font-size: var(--text-h1);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--text-h2);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h3 {
+  font-size: var(--text-h3);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h4 {
+  font-size: var(--text-h4);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h5 {
+  font-size: var(--text-h5);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h6 {
+  font-size: var(--text-base);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+p {
+  font-size: var(--text-paragraph);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--text-paragraph);
+  font-family: var(--font-family-paragraph);
+  font-weight: var(--font-weight-bold);
+}
+
+ul {
+  font-size: var(--text-paragraph);
+  list-style: none;
+}
+
+/*---------------------- COMPONENT STYLYLES ----------------------*/
+
+
+
+/*---------------------- SECTIONS ----------------------*/
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.naver {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--secondary-base);
+  border: 1px solid gainsboro;
+  margin-bottom: 5rem;
+}
+
+.nav-img {
+  width: 80px;
+  margin-left: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 1rem;
+}
+
+#menu-open-button,
+#menu-close-button{
+  display: none;
+  border: none;
+  background: transparent;
+  color: var(--grey-shade);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-top: 1rem;
+  color: var(--grey-shade);
+}
+
+.nav-consultant {
+  padding: 1rem;
+  border: 1px solid var(--primary-tint);
+  border-radius: 0.5rem;
+}
+
+.nav-consultant:link,
+.nav-consultant:visited {
+  color: var(--secondary-tint);
+  background-color: var(--primary-tint);
+  transition: 0.5s;
+}
+
+.nav-consultant:hover,
+.nav-consultant:active {
+  opacity: 0.95;
+  box-shadow: 0 2px 5px 0 var(--primary-tint);
+}
+
+/*---------- PROJECT SECTION ----------*/
+
+.project-heading{
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+}
+
+.project-paragraph{
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+}
+
+.project-groupimg{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  max-width: 1000px;
+  margin: 0 auto;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  background-color: var(--secondary-tint);
+  padding: 1rem;
+}
+
+.cinematic{
+  grid-column: span 2 ;
+}
+
+.project-img{
+  max-width: 800px;
+  width: 100%;
+  aspect-ratio: 3/3;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cinematicnoir{
+  max-width: 100%;
+  height: 400px;
+}
+
+/*---------- CTA SECTION ----------*/
+
+.cta-section{
+  margin: 5rem 2rem 5rem;
+
+}
+
+.cta-heading{
+  margin: 0 0 0.5rem 3rem;
+}
+
+.cta-paragraph{
+  margin: 0 0 1rem;
+}
+
+
+.cta-link{
+  margin-right: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-shade);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cta-link:link,
+.cta-link:visited {
+  color: var(--secondary-tint);
+  background-color: var(--primary-shade);
+  transition: 1s;
+}
+
+.cta-link:hover,
+.cta-link:active {
+  color: var(--secondary-base);
+  background-color: var(--primary-tint);
+  border: 1px solid var(--primary-tint);
+  box-shadow: 0px 2px 5px 0px var(--primary-tint);
+}
+
+
+/*---------- SOCIAL MEADIA SECTION ----------*/
+
+.social-media{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  max-width: 200px;
+  margin: 0 auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  background-color: var(--secondary-tint);
+  padding: 1rem;
+  margin-bottom: 5rem;
+  justify-items: center;
+}
+
+.social-icon{
+  width: 60px;
+}
+
+
+/*---------- FOOTER SECTION ----------*/
+
+.footer-heading{
+  color: var(--secondary-tint);
+  margin-bottom: 1rem;
+}
+
+.footer-paragraph{
+  color: var(--secondary-shade);
+  margin-bottom: 1.5rem;
+}
+
+.footer-p{
+  color: var(--grey-tint);
+  margin-bottom: 2rem;
+}
+
+.footer-li{
+  padding-bottom: 2rem;
+}
+
+.buttom-link{
+  color: var(--secondary-shade);
+}
+
+
+
+
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 900PX*/
+
+@media screen and (max-width: 900px) { 
+
+  :root{
+  --text-sml: 1rem;
+  --text-base: 1.5rem;
+  --text-paragraph: 1.9rem;
+  --text-h5: 2rem;
+  --text-h4: 3rem;
+  --text-h3: 3.5rem;
+  --text-h2: 4rem;
+  --text-h1: 5.2rem;
+  --letter-spacing-tight: -1px;
+  --letter-spacing-normal: 0;
+  }
+
+  .nav-img {
+  width: 70px;
+  }
+
+  .naver{
+    position: relative;
+  }
+
+  #menu-open-button{
+    display: block;
+    margin-right: 2rem; 
+  }
+
+  #menu-close-button{
+  display: block !important;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+  .naver .nav-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 500px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    gap: 2rem;
+    background-color: var(--secondary-base);
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-consultant {
+    width: 250px;
+    text-align: center;
+  }
+
+ .naver {
+   margin-bottom: 3rem;
+}
+
+ .project-paragraph{
+   margin-bottom: 3rem;
+} 
+
+ .project-groupimg{
+   column-gap: 3rem;
+   row-gap: 2rem;
+}
+
+ .project-img{
+   max-width: 800px;
+   width: 100%;
+   aspect-ratio: 4/3;
+}
+
+}
+
+@media (max-width: 55rem)  {
+
+ html{
+   font-size: 53.3%;
+ }
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 500PX*/
+
+@media (max-width: 50rem)  {
+
+ html{
+   font-size: 50%;
+ }
+
+  .naver .nav-menu{
+   width: 350px;
+    height: 400px;
+ }
+
+ .nav-consultant {
+    width: 150px;
+    text-align: center;
+  }
+
+ .project-img{
+   max-width: 500px;
+ }
+
+ .cinematicnoir{
+   max-width: 100%;
+   height: 200px;
+}
+
+ .project-groupimg{
+   column-gap: 2rem;
+   row-gap: 1rem;
+}
+
+ .footer-paragraph {
+   max-width: 90%;
+}
+
+ .social-media{
+   max-width: 100px;
+   column-gap: 0.5rem;
+   row-gap: 0.5rem;
+}
+ .social-icon{
+   width: 30px;
+}
+
+ 
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 398PX*/
+
+@media (max-width: 45rem)  {
+
+ html{
+   font-size: 40%;
+ }
+
+ h2, h3, h4 {
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 398PX*/
+
+@media (max-width: 45rem)  {
+
+ html{
+   font-size: 39%;
+ }
+
+ .naver .nav-menu{
+   width: 250px;
+   height: 350px;
+ }
+
+ .nav-consultant {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+
+/* Aurelia Interiors — Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3B2416;
+    color: #ffffff;
+    border: 1px solid #B9823B;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(59, 36, 22, 0.22);
+    z-index: 1000;
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+    background: #B9823B;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(59, 36, 22, 0.3);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid #B9823B;
+    outline-offset: 4px;
+}
+
+.whatsapp-float svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-float svg {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float {
+        transition: none;
+    }
+}

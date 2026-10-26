@@ -1,0 +1,438 @@
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 900PX*/
+
+@media screen and (max-width: 900px) { 
+
+  :root{
+  --text-sml: 1rem;
+  --text-base: 1.5rem;
+  --text-paragraph: 1.9rem;
+  --text-h5: 2rem;
+  --text-h4: 3rem;
+  --text-h3: 3.5rem;
+  --text-h2: 4rem;
+  --text-h1: 5.2rem;
+  --letter-spacing-tight: -1.2px;
+  --letter-spacing-normal: -1px;
+  }
+
+  .nav-img {
+  width: 70px;
+  }
+  .naver{
+    position: relative;
+  }
+
+  #menu-open-button{
+    display: block;
+    margin-right: 2rem; 
+  }
+
+  #menu-close-button{
+  display: block !important;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+  .naver .nav-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 500px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    gap: 2rem;
+    background-color: var(--secondary-base);
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-consultant {
+    width: 250px;
+    text-align: center;
+  }
+
+   .hero-heading{
+   padding-bottom: 1.5rem;
+  }
+
+   .hero{
+    margin-top: 10rem;
+  }
+
+  .hero-paragraph{
+    max-width: 550px;
+  }
+
+  .hero-content {
+  padding-top: 8rem;
+}
+
+  /* ============ TABLET AND MOBILE ============ */
+
+ 
+  .service1-img,
+  .service2-img {
+    grid-template-columns: 1fr;
+  }
+
+  /* Keep text hidden until the image is touched */
+
+  .image-container .image-text {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+  }
+
+  .image-container::after {
+    opacity: 0;
+  }
+
+  /* Reveal text when JavaScript adds this class */
+
+  .image-container.show-text .image-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .image-container.show-text::after {
+    opacity: 1;
+  }
+  
+  .about-section{
+    padding: 3rem 2rem 0 ;
+  }
+ 
+  .img-paragraph{
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+  
+  .service-cta{
+    margin-bottom: 5rem;
+  }
+
+  .project-p{
+    margin-top: 7rem;
+  }
+
+  .project-img{
+   gap: 1.5rem;
+ }
+
+  .testimonials-paragraph{
+    padding: 0 1rem ;
+  }
+
+   .testimonials-slider {
+    gap: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .testimonials-card {
+    flex-basis: 300px;
+    padding: 2rem;
+  }
+
+  .testimonial-arrow {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+  }
+
+  .team-section {
+    padding: 5rem 0;
+  }
+
+  .team-cardcontainer {
+    gap: 2rem;
+  }
+
+  .team-card {
+    flex-basis: calc((100% - 2rem) / 2);
+  }
+
+  .team-img {
+    height: 380px;
+  }
+
+  .team-header {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 55rem)  {
+
+ html{
+   font-size: 53.3%;
+ }
+
+}
+
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 620PX*/
+
+@media screen and (max-width: 615px) { 
+
+  :root{
+  --text-sml: 0.8rem;
+  --text-base: 1.5rem;
+  --text-paragraph: 1.9rem;
+  --text-h5: 1.8rem;
+  --text-h4: 2.8rem;
+  --text-h3: 3.3rem;
+  --text-h2: 3.5rem;
+  --text-h1: 4.5rem;
+  --letter-spacing-tight: -1px;
+  --letter-spacing-normal: -0.8px;
+}
+
+ .h1{
+  font-size: var(--text-h1);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+  .naver .nav-menu{
+   width: 350px;
+    height: 400px;
+ }
+
+ .nav-consultant {
+    width: 150px;
+    text-align: center;
+  }
+
+  .hero-content {
+  padding-top: 12rem;
+}
+
+.hero-eyebrow{
+  margin-bottom: 2.5rem;
+}
+
+  .img-heading{
+    font-size: var(--text-h4);
+  }
+
+  .img-paragraph{
+    font-size: 2rem;
+  }
+
+
+ .hero-content{
+   width: 90%;
+   max-width: 50rem;
+   margin: 0 auto;
+   text-align: center;
+ }
+
+ .hero-buttons{
+    flex-direction: column;
+  }
+.btn-primary:link,
+.btn-primary:visited {
+  padding: 2rem 3.5rem; 
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  padding: 2rem 3rem;
+}
+
+
+ .project-img{
+  grid-template-columns: repeat(2, 1fr) ;
+ }
+
+ .testimonials-section {
+    padding-top: 2.5rem;
+  }
+
+  .testimonials-paragraph {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-slider {
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  .testimonials-cardcontainer {
+    gap: 1rem;
+  }
+
+  .testimonials-card {
+    flex: 0 0 100%;
+    min-height: 0;
+    margin: 1rem 0 3rem;
+    padding: 2rem;
+  }
+
+  .testimonial-stars {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-cardp {
+    margin-bottom: 2.5rem;
+  }
+
+  .testimonial-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.7rem;
+  }
+
+  .team-section {
+    padding: 4rem 0;
+  }
+
+  .team-header {
+    padding: 0 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .team-cardcontainer {
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    flex-basis: 90%;
+  }
+
+  .team-img {
+    height: 400px;
+  }
+
+  .team-info {
+    padding: 1.5rem 0;
+  }
+
+  .team-name {
+    font-size: 1.8rem;
+    margin: 1rem 2rem;
+    letter-spacing: normal;
+  }
+
+  .team-slider-dots {
+    margin-top: 1rem;
+  }
+
+ .footer-icon{
+  width: 20px;
+ }
+
+ .footer-ul .footer-icon {
+  width: 20px;
+}
+
+ .footer-container{
+  display: block;
+ }
+
+ .footer-s{
+  margin-bottom: 1rem;
+ }
+
+ .footer-paragraph {
+  max-width: 60%;
+  padding-bottom: 4rem;
+ }
+
+ .service1-img,
+ .service2-img{
+  grid-template-columns: 1fr;
+ }
+
+
+ .service-img1,
+ .service-img2 {
+  max-width: 370px;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 42rem)  {
+
+ html{
+   font-size: 50%;
+ }
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 399PX*/
+
+@media screen and (max-width: 399px) {
+
+  .naver .nav-menu{
+   width: 250px;
+   height: 350px;
+ }
+
+  .hero-buttons{
+    flex-direction: column;
+  }
+
+  .btn-primary{
+    padding: 1.7rem 3rem ;
+  }
+
+  .service-img1,
+  .service-img2 {
+    max-width: 320px;
+    margin: 0 auto;
+  
+  }
+
+  .footer-icon{
+  width: 15px;
+ }
+
+ .footer-ul .footer-icon {
+  width: 15px;
+}
+
+  .footer-paragraph {
+  max-width: 70%;
+  padding-bottom: 3rem;
+ }
+}
+
+@media (max-width: 38rem)  {
+
+ html{
+   font-size: 45.3%;
+ }
+ 
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 334PX*/
+
+@media (max-width: 35rem)  {
+
+ html{
+   font-size: 40%;
+ }
+
+ .naver .nav-menu{
+   width: 200px;
+   height: 300px;
+ }
+
+ .testimonials-card{
+  max-width: 250px;
+
+  min-height: 350px;
+ }
+ 
+}

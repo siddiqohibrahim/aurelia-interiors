@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Aurelia design.css">
+
+  <title>Aurelia Interiors</title>
+</head>
+
+
+<body>
+
+ <div class="container">
+
+  <header>
+
+  <!---- HEADER ---->
+
+  <!---- NAVER ---->
+
+ <nav class="naver">
+
+    <img src="Aurelia logo.jpeg" class="nav-img" alt="Aurelia logo">
+
+    <ul class="nav-link">
+
+      <li>
+        <a href="aurelia project.html" class="navi">Home</a>
+      </li>
+
+      <li>
+        <a href="About Aurelia.html" class="navi">About</a>
+      </li>
+
+      <li>
+        <a href="Aurelia design.html" class="navi">Service</a>
+      </li>
+
+      <li>
+        <a href="About Aurelia.html" class="navi">Team</a>
+      </li>
+
+      <li>
+        <a href="Aurelia book collection.html" class="nav-consultant">Book a consultant <strong>→</strong></a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  </header>
+
+
+  <!---- MAIN CONTENT ---->
+
+   <main>
+ 
+    <section>
+
+  
+    
+    <div class="hero">
+      <h4 class="hero-content">Our Creation</h4>
+    </div>
+    
+
+    <h2 class="hero-heading">Project By Aurelia</h2>
+
+    <p class="hero-paragraph">
+     Every space tells a different story. Our portfolio brings together considered residential and commercial interiors, each shaped around the people who use them, the architecture they inhabit and the way they want to live or work.
+     Explore a selection of our work, from serene private residences and contemporary apartments to distinctive commercial spaces designed to balance character, function and lasting appeal.
+    </p>
+
+    <h3 class="service1">Aurelia Residential</h3>
+
+    <section class="residential-project">
+
+    <div>
+    <img src="cryogenic1.jpeg" class="project1" alt="Futuristic white kitchen with marble island and blue lighting">
+
+    <h4 class="project-heading">Cryogenic Luxe Residence</h4>
+    <p class="project-paragraph">
+      Designed for Victoria Hayes in Perth.
+    </p>
+
+    <a href="Cryogenic Luxe Residence.html" class="project-cta">View Project <strong>→</strong></a>
+
+  </div>
+
+  <div>
+    <img src="Aurelia hero img.jpeg" class="project1" alt="Luxury contemporary living room with white seating, dark accents and architectural lighting.">
+
+    <h4 class="project-heading">Monochrome Luxe Residence</h4>
+
+    <p  class="project-paragraph">Designed for Marine Walker in Sydney</p>
+
+    <a href="Monochrome Luxe Residance.html" class="project-cta">View Project <strong>→</strong></a>
+  </div>
+
+  <div>
+    <img src="Sun1.jpeg" class="project1" alt="Luxury pool terrace with infinity pool and outside seating">
+
+    <h4 class="project-heading">Sun-Drenched Resort Residence</h4>
+
+    <p  class="project-paragraph">
+      Designed for Ethan & Olivia Morgan in Gold Coast.
+    </p>
+
+    <a href="sun drenched resort.html" class="project-cta">Explore Project <strong>→</strong></a>
+  </div>
+
+  <div>
+    <img src="Ethereal1.jpeg" class="project1" alt="Modern curved kitchen with white marble island and brass details">
+
+    <h4 class="project-heading">Ethereal Curves Residence</h4>
+
+    <p  class="project-paragraph">
+      Designed for Daniel & Sophie Laurent in Adelaide.
+    </p>
+
+    <a href="Ethereal Curves Residence.html" class="project-cta">View Project <strong>→</strong></a>
+  </div>
+
+  <div class="cinematic">
+    <img src="Aurelia p1.jpeg" class="project1 cinematic-img" alt="Dark luxury living room with charcoal seating and blue lighting">
+
+    <h4 class="project-heading">Cinematic Noir Residence</h4>
+
+    <p  class="project-paragraph">
+      Designed for Alexander Reed in Melbourne.
+    </p>
+
+    <a href="Cinematic Noir Residenc.html" class="project-cta">View Project <strong>→</strong></a>
+  </div>
+
+</section>
+
+  <h3 class="services2">Aurelia Commercial</h3>
+
+
+  <section class="residential-project">
+
+  <div>
+    <img src="wattle4.jpeg" class="project1" alt="Wattle & Co headquarter exterior with illuminated signage at dusk">
+
+    <h4 class="project-heading">Wattle & Co. Headquarters</h4>
+
+    <p class="project-paragraph">
+     A refined workspace built for innovation tech and growth.
+    </p>
+
+    <a href="Wattle.html" class="project-cta">Explore Project <strong>→</strong></a>
+  </div>
+
+
+  <div>
+   <img src="resturant1.jfif" class="project1" alt="Luxury rooftop jazz lounge with grand piano, curved seating and city views">
+
+   <h4 class="project-heading">Meridian Club</h4>
+
+   <p class="project-paragraph">A sophisticated destination designed for dining, conversation and unforgettable evenings</p>
+
+   <a href="Meridian club.html" class="project-cta">Discover More <strong>→</strong></a>
+  </div>
+
+  <div>
+    <img src="falah4.jpeg" class="project1" alt="Al-falah holdings chairman's office">
+
+    <h3 class="project-heading">Al-Falah Holdings</h3>
+
+    <p class="project-paragraph">
+      A refined headquarters designed around leadership, clarity and growth.
+    </p>
+
+    <a href="Al-Falah.html" class="project-cta">Explore Project <strong>→</strong></a>
+  </div>
+
+  <div>
+    <img src="jewelry.jfif" class="project1" alt="Luxora bridal and fine jewelry salon">
+
+    <h3 class="project-heading">Luxora</h3>
+
+    <p class="project-paragraph">
+      A refined retail experience designed to make every piece feel extraordinary.
+    </p>
+
+    <a href="Luxora.html" class="project-cta">View Project <strong>→</strong></a>
+  </div>
+
+  <div class="zen">
+    <img src="zen3.jfif" class="project1 zen-img" alt="Zen.Co open-plan workplace">
+
+    <h3 class="project-heading">ZEN.Co</h3>
+
+    <p class="project-paragraph">
+      A modern workplace designed for clarity, collaboration and growth.
+    </p>
+
+    <a href="Zen.html" class="project-cta">Discover More <strong>→</strong></a>
+  </div>
+
+ </section>
+
+  <div class="let-create">
+      <h3 class="create-heading">LET'S CREATE SOMETHING CONSIDERED</h3>
+
+      <p class="create-paragraph">
+        Your Space. Your Story. Our Expertise.
+      </p>
+    
+      <p class="create-paragraph">
+        From Sydney to projects across Australia, we're here to create spaces that work beautifully for the people who use them.
+      </p>
+
+      <a href="Aurelia book collection.html" class="Schedule-link">Schedule a Consultation  <strong>→</strong></a>
+    </div>
+
+    </div>
+
+ </section>
+
+</main>
+  
+
+  <!---- FOOTER ----> 
+
+<footer>
+
+ <section class="footer-container">
+
+  <div>
+
+   <h2 class="footer-heading">
+    AURELIA INTERIORS
+   </h2>
+
+   <P class="footer-paragraph">
+    Australian interior design studio creating spaces built for real, everyday living.
+   </P>
+ 
+   <div class="footer-icon1">
+    
+     <img src="" class="footer-icon" alt="location icon">
+
+     <p class="footer-paragrap">Sydney, Australia</p>
+
+   </div>
+  
+   <div  class="footer-icon1">
+
+     <img src="email icon.svg" class="footer-icon" alt="email icon" width="50px">
+
+     <p class="footer-paragrap">hello@aureliainteriors.com</p>
+
+   </div>
+
+   <div class="footer-icon1">
+     
+     <img src="whatsapp icon.svg" class="footer-icon" alt="whatsapp icon" width="50px">
+
+     <p class="footer-paragrap">
+      <strong>+61201271503</strong>
+     </p>
+
+   </div>
+
+   <ul class="footer-ul">
+
+     <li>
+    
+        <a href="https://www.instagram.com/@lame" target="_blank">
+
+        <img class="footer-icon" src="instagram icon.svg" alt="Instagram" width="100px">
+
+        </a>
+
+     </li>
+ 
+     <li>
+       
+        <a href="https://facebook.com/@lame" target="_blank">
+
+        <img class="footer-icon" src="facebook icon.svg" alt="Facebook" width="100px">
+
+        </a>
+
+     </li>
+
+
+     <li>
+
+       <a href="https://linkdein.com" target="_blank">
+
+        <img class="footer-icon" src="linkden icon.svg" alt="linkdein" width="100px">
+
+        </a>
+
+     </li>
+
+
+     <li>
+
+      <a href="https://Tiwitter.com/" target="_blank">
+
+        <img class="footer-icon" src="Tiwitter icon.svg" alt="Tiwitter" width="100px">
+
+      </a>
+
+     </li>
+
+     <li>
+
+      <a href="https://youtube.com/" target="_blank">
+
+        <img class="footer-icon" src="youtube icon.svg" alt="Youtube" width="100px">
+
+      </a>
+
+     </li>
+
+   </ul>
+
+  </div>
+
+  <div>
+
+   <h4 class="footer-heading">Navigation</h4>
+
+   <ul class="footer-ul1">
+
+     <li>Home</li>
+     <li>About</li>
+     <li>Service</li>
+     <li>Projects</li>
+     <li>Content</li>
+
+   </ul>
+
+   <h4 class="footer-heading footer-service">Services</h4>
+
+   <ul class="footer-ul1">
+
+     <li>Residential Interiors</li>
+     <li>Commercial Interiors</li>
+     <li>Space Planning</li>
+     <li>Interior Styling</li>
+
+   </ul>
+   
+  </div>
+
+ </section>
+
+   <p class="last-paragraph">
+    &copy; 2026 Aurelia Interiors. All rights reserved.
+   </p>
+
+
+
+ </footer>
+
+ </div>
+
+</body>
+
+</html>

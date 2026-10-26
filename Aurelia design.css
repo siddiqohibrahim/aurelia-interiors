@@ -1,0 +1,777 @@
+/*
+
+---------------------- TYPOGRAPHY ----------------------
+
+FONT WEIGHTS
+  400 / 700
+
+LINE HEIGHT
+1.2 /  1.5
+
+LETTER SPACING
+-1.2px
+
+FONT FAMILY
+poppins, sans-serif
+Rubik, sans-serif
+
+FONT SIZES
+1.2rem / 1.6rem / 2rem / 2.4rem / 3.2rem / 4rem / 4.8rem / 6.2rem
+
+
+
+---------------------- COLORS ----------------------
+
+
+PRIMARY - Dark Chocolate Brown
+Base: #1C1C1C [Deep Chocolate]
+Tint: #4A4A47 [Soft Charcoal]
+Shade: #111111 [Near Black]
+
+
+SECONDARY - Warm Ivory
+Base: #F7F3ED [Warm Ivory]
+Tint: #FBF9F6 [Light Ivory]
+Shade: #DED8CF [Deep Ivory]
+
+TERTIARY - Muted Bronze
+Base: #A8875A [Muted Bronze]
+Tint: #C6B08B [Light Bronze]
+Shade: #80643D [Deep Bronze]
+
+GREY - Warm Gray
+Base: #6B6657 [Warm Gray]
+Tint: #A7A39D [Light Gray]
+Shade: #403D39 [Dark Grey]
+
+WHITE: #ffffff 
+BLACK: #000000
+
+---------------------- BORDER ----------------------
+
+BORDER
+
+1px / 2px
+
+BORDER RADIUS
+
+4px / 8px / 12px
+
+---------------------- SPACING ----------------------
+
+4px / 8px / 16px / 24px / 32px / 48px / 64px / 96px / 128px
+
+*/
+
+/*---------------------- GLOBAL STYLYLES ----------------------*/
+
+:root {
+
+  /* FONT WEIGHTS */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* LINE HEIGHT */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* LETTER SPACING */
+  --letter-spacing-tight: -1.5;
+  --letter-spacing-normal: -1.2
+    /* FONT FAMILY */
+    --font-family-heading: 'poppins', sans-serif;
+  --font-family-paragraph: 'Rubik', sans-serif;
+
+
+  /* FONT SIZES */
+  --text-sml: 1.2rem;
+  --text-base: 1.6rem;
+  --text-paragraph: 2rem;
+  --text-h5: 2.4rem;
+  --text-h4: 3.2rem;
+  --text-h3: 4rem;
+  --text-h2: 4.8rem;
+  --text-h1: 6.2rem;
+
+
+  /* COLORS */
+  --primary-base: #5B3A2E;
+  --primary-tint: #8A685A;
+  --primary-shade: #24110b;
+  --secondary-base: #F7F3ED;
+  --secondary-tint: #FBF9F6;
+  --secondary-shade: #DED8CF;
+  --tertiary-base: #b37d31ce;
+  --tertiary-tint: #A8875A;
+  --tertiary-shade: #80643D;
+  --grey-base: #52514f;
+  --grey-tint: #979490;
+  --grey-shade: #1d1c1b;
+  --white: #ffffff;
+  --black: #000;
+
+  /* NAVER */
+  --nave-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body {
+  background-color: var(--secondary-base);
+}
+
+footer {
+  background-color: var(--primary-base);
+  color: var(--secondary-base);
+  padding: 3rem 0 0 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  font-family: var(--font-family-heading);
+  color: var(--grey-shade);
+}
+
+p,
+ul {
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  font-family: var(--font-family-paragraph);
+  color: var(--grey-base);
+}
+
+h1 {
+  font-size: var(--text-h1);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--text-h2);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h3 {
+  font-size: var(--text-h3);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h4 {
+  font-size: var(--text-h4);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h5 {
+  font-size: var(--text-h5);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+h6 {
+  font-size: var(--text-base);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+p {
+  font-size: var(--text-paragraph);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--text-paragraph);
+  font-family: var(--font-family-paragraph);
+  font-weight: var(--font-weight-bold);
+}
+
+ul {
+  font-size: var(--text-paragraph);
+  list-style: none;
+}
+
+/*---------------------- COMPONENT STYLYLES ----------------------*/
+
+
+
+/*---------------------- SECTIONS ----------------------*/
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.naver {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--secondary-base);
+  border: 1px solid gainsboro;
+  margin-bottom: 1rem;
+}
+
+.nav-img {
+  width: 80px;
+  margin-left: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-right: 1rem;
+}
+
+#menu-open-button,
+#menu-close-button{
+  display: none;
+  border: none;
+  background: transparent;
+  color: var(--grey-shade);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-top: 1rem;
+  color: var(--grey-shade);
+}
+
+.nav-consultant {
+  padding: 1rem;
+  border: 1px solid var(--primary-tint);
+  border-radius: 0.5rem;
+}
+
+.nav-consultant:link,
+.nav-consultant:visited {
+  color: var(--secondary-tint);
+  background-color: var(--primary-tint);
+  transition: 0.5s;
+}
+
+.nav-consultant:hover,
+.nav-consultant:active {
+  opacity: 0.95;
+  box-shadow: 0 2px 5px 0 var(--primary-tint);
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+  background-image:
+    url(hero\ image1.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  height: 30%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35rem;
+  color: var(--secondary-base);
+}
+
+.hero-heading{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hero-paragraph{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/*---------- SERVICE SECTION ---------- */
+
+.service1{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.services2{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+/*---------- PROJECT SECTION ---------- */
+
+
+/*------- RESIDENTIAL PROJECT ------- */
+
+.residential-project{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  max-width: 1000px;
+  margin: 0 auto;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  background-color: var(--secondary-base);
+}
+
+.project-heading{
+  margin-bottom: 0.1rem;
+}
+
+.project-paragraph{
+  margin-bottom: 0.7rem;
+}
+
+
+.project1{
+  max-width: 500px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cinematic, .zen{
+    grid-column: span 2 ;
+    margin-bottom: 5rem;
+}
+
+.cinematic-img, .zen-img{
+    max-width: 100%;
+    height: 500px;
+}
+
+.project-cta:link, .project-cta:visited, .project-cta:hover, .project-cta:active{
+  color: var(--primary-shade);
+  background-color: var(--secondary-shade);
+  padding: 1rem 3rem;
+}
+
+
+/*------- COMMERCIAL PROJECT ------- */
+
+ .commercial-project{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  max-width: 1000px;
+  margin: 0 auto;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  background-color: var(--secondary-base);
+ }
+
+ /*---------- CREATE SECTION ---------- */
+
+.let-create{
+  max-width: 1100px;
+  background-color: var(--secondary-base);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-heading{
+  margin-bottom: 0.5rem;
+  color: var(--grey-shade);
+}
+
+.create-paragraph{
+  margin-bottom: 0.5rem;
+}
+
+
+.Schedule-link{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--primary-tint);
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.Schedule-link:link,
+.Schedule-link:visited {
+  color: var(--secondary-tint);
+  background-color: var(--primary-shade);
+  transition: 1sec;
+}
+
+.Schedule-link:hover,
+.Schedule-link:active {
+  background-color: var(--primary-base);
+  color: var(--secondary-tint);
+  box-shadow: 0px 2px 5px 0px var(--primary-tint);
+}
+
+
+/*---------- FOOTER SECTION ---------- */
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer-heading{
+  color: var(--white);
+  padding-bottom: 0.5rem;
+}
+
+.footer-paragraph{
+  color: var(--grey-tint);
+  padding-bottom: 5rem;
+  max-width: 50%;
+}
+
+.footer-ul{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.buttom-link{
+  color: var(--grey-tint);
+}
+
+.footer-icon{
+  width: 25px;
+}
+
+.footer-icon1{
+  display: flex;
+  padding-bottom: 2rem;
+  gap: 0.2rem;
+}
+
+.footer-paragrap{
+  color: var(--secondary-base);
+}
+
+.footer-ul1{
+  color: var(--grey-tint);
+  
+}
+
+.footer-service{
+  margin-top: 3rem;
+}
+
+.last-paragraph{
+  color: var(--grey-tint);
+  text-align: center;
+}
+
+
+
+
+
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 900PX*/
+
+@media screen and (max-width: 900px) { 
+
+  :root{
+  --text-sml: 1rem;
+  --text-base: 1.5rem;
+  --text-paragraph: 1.9rem;
+  --text-h5: 2rem;
+  --text-h4: 3rem;
+  --text-h3: 3.5rem;
+  --text-h2: 4rem;
+  --text-h1: 5.2rem;
+  --letter-spacing-tight: -1.2px;
+  --letter-spacing-normal: -1px;
+  }
+
+  .nav-img {
+  width: 70px;
+  }
+
+  .naver{
+    position: relative;
+  }
+
+  #menu-open-button{
+    display: block;
+    margin-right: 2rem; 
+  }
+
+   #menu-close-button{
+  display: block !important;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+  .naver .nav-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 500px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    gap: 2rem;
+    background-color: var(--secondary-base);
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-consultant {
+    width: 250px;
+    text-align: center;
+  }
+
+
+  .cinematic-img, .zen-img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.hero-paragraph {
+  text-align: left;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  
+}
+}
+
+
+
+
+
+@media (max-width: 56rem)  {
+
+ html{
+   font-size: 56.25%;
+ }
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 738PX*/
+
+@media screen and (max-width: 738px) { 
+
+  :root{
+  --text-sml: 0.8rem;
+  --text-base: 1.5rem;
+  --text-paragraph: 1.9rem;
+  --text-h5: 1.8rem;
+  --text-h4: 2.8rem;
+  --text-h3: 3.3rem;
+  --text-h2: 3.5rem;
+  --text-h1: 4.5rem;
+  --letter-spacing-tight: -1px;
+  --letter-spacing-normal: -0.1px;
+}
+
+.naver .nav-menu{
+   width: 350px;
+    height: 400px;
+ }
+
+ .nav-consultant {
+    width: 150px;
+    text-align: center;
+  }
+
+.footer-icon{
+  width: 20px;
+ }
+
+ .footer-ul .footer-icon {
+  width: 20px;
+}
+
+ .footer-s{
+  margin-bottom: 1rem;
+ }
+
+ .footer-paragraph {
+  max-width: 60%;
+  padding-bottom: 4rem;
+ }
+ 
+ h1, h2, h3, h4, h5{
+  letter-spacing: var(--letter-spacing-normal);
+ }
+
+}
+
+@media (max-width: 50rem)  {
+
+ html{
+   font-size: 52%;
+ }
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 665PX*/
+
+
+@media (max-width: 45rem)  {
+
+ html{
+   font-size: 48%;
+ }
+
+ .residential-project, .commercial-project{
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+ }
+ 
+ .cinematic, .zen{
+  grid-column: span 1;
+ }
+
+ 
+ .project1{
+  max-width: 800px;
+}
+  
+  .footer-paragraph {
+  max-width: 70%;
+  padding-bottom: 3rem;
+ }
+ 
+
+}
+
+/*RESONSIVE MEDIA QUERY FOR MAX WIDTH 481PX*/
+
+@media (max-width: 40rem)  {
+
+ html{
+   font-size: 43%;
+ }
+
+ .naver .nav-menu{
+   width: 250px;
+   height: 350px;
+ }
+
+ .footer-icon{
+  width: 15px;
+ }
+
+ .footer-ul .footer-icon {
+  width: 15px;
+}
+
+ .footer-container{
+  display: block;
+ }
+
+ .footer-s{
+  margin-bottom: 1rem;
+ }
+
+ .footer-paragraph {
+  max-width: 80%;
+  padding-bottom: 4rem;
+ }
+
+ .footer-s{
+  margin-bottom: 1rem;
+ }
+
+}
+
+
+/* Aurelia Interiors — Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3B2416;
+    color: #ffffff;
+    border: 1px solid #B9823B;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(59, 36, 22, 0.22);
+    z-index: 1000;
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+    background: #B9823B;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(59, 36, 22, 0.3);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid #B9823B;
+    outline-offset: 4px;
+}
+
+.whatsapp-float svg {
+    display: block;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-float svg {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float {
+        transition: none;
+    }
+}
