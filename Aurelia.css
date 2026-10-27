@@ -353,6 +353,7 @@ a {
 }
 
 
+
 /* =====================================================
    HERO SECTION
 ===================================================== */
@@ -365,30 +366,45 @@ a {
   text-transform: uppercase;
 }
 
+
 .hero {
   width: 100%;
   height: 500px;
   margin-top: 8rem;
-  position: relative;
-
-  background-image:
-    linear-gradient(
-      rgba(91, 58, 46, 0.65),
-      rgba(91, 58, 46, 0.65)
-    ),
-    url("hero image.jpeg");
-
-  background-size: cover;
-  background-position: center;
-
   margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Hero image */
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Keep the original brown overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(91, 58, 46, 0.65);
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-heading {
@@ -410,7 +426,6 @@ a {
 .heading-span{
   color: var(--tertiary-tint);
 }
-
 
 /* =====================================================
    SERVICES SECTION
