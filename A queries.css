@@ -62,7 +62,7 @@
   }
 
    .hero-heading{
-   padding-bottom: 1.5rem;
+   padding-bottom: 2.5rem;
   }
 
    .hero{
@@ -70,7 +70,7 @@
   }
 
   .hero-paragraph{
-    max-width: 550px;
+    max-width: 500px;
   }
 
   .hero-content {
@@ -213,11 +213,19 @@
   }
 
   .hero-content {
-  padding-top: 12rem;
+  padding-top: 10rem;
+}
+
+.hero-heading{
+  padding-bottom: 3rem;
+}
+
+.hero-paragraph{
+  margin: 2rem auto 6rem;
 }
 
 .hero-eyebrow{
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
   .img-heading{
@@ -241,7 +249,7 @@
   }
 .btn-primary:link,
 .btn-primary:visited {
-  padding: 2rem 3.5rem; 
+  padding: 2.5rem 4.5rem; 
 }
 
 .btn-secondary:link,
