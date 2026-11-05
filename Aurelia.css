@@ -295,7 +295,7 @@ a {
    NAVIGATION
 ===================================================== */
 
-.naver {
+nav {
   height: var(--nav-height);
   display: flex;
   align-items: center;
@@ -674,23 +674,21 @@ a {
 
 .project-img {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
-
   margin-bottom: 3rem;
-
-  align-items: center;
-  justify-items: center;
+  align-items: start;
+  justify-items: stretch;
 }
 
 .project-img1 {
+  display: block;
   width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4 / 3;
+  max-width: none;
+  height: 300px;
+  aspect-ratio: auto;
   object-fit: cover;
-  transition: transform 1.2s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .project-img article {
@@ -703,10 +701,6 @@ a {
 
 .project1-img {
   text-align: left;
-}
-
-.project-title{
-  white-space: nowrap;
 }
 
 .cta {
@@ -794,8 +788,13 @@ a {
   max-width: 400px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-
   transition: transform 1s ease-in-out;
+}
+
+.project-img article {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 /* SLOW IMAGE ZOOM */
@@ -1249,6 +1248,32 @@ footer {
   color: var(--grey-tint);
 
   text-align: center;
+}
+
+
+@media screen and (max-width: 615px) {
+  .hero {
+    height: 600px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-content {
+    padding-top: 5rem;
+  }
+
+  .hero-eyebrow {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-heading {
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-paragraph {
+    margin: 1rem auto 3rem;
+  }
 }
 
 
